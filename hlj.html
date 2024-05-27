@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://cases.geekfun.website/bs/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cases.geekfun.website/bs/dist/bootstrap-icons.css">
+		<title>产品落地页移动端-页头页脚</title>
+		<style>
+			body {
+				font-family: Microsoft Yahei, -apple-system, PingFang SC, Helvetica Neue, Helvetica, Arial, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+			}
+
+			.banner {
+				width: 100%;
+				background: url(https://cases.geekfun.website/bs/ch16/home-banner@2x.jpg) 0% 0% / cover no-repeat;
+			}
+
+			.logo {
+				width: 100px;
+			}
+
+			.bg-gray {
+				background-color: #f4f4f4 !important;
+			}
+
+			#example {
+				max-width: 100%;
+				max-height: 100%;
+
+			}
+
+			.carousel-item img {
+				max-width: 100%;
+				max-height: 500px;
+
+			}
+
+			.container-fluid {
+				margin: 0;
+				/* 确保容器没有外边距 */
+				padding: 0;
+				/* 确保容器没有内边距 */
+			}
+
+			.video-container {
+				width: 85%;
+				max-width: 100%;
+				/* 调整为百分比 */
+				margin: 0 auto;
+				position: relative;
+				overflow: hidden;
+			}
+
+			video {
+				width: 100%;
+				aspect-ratio: 16/9;
+				/* 保持16:9的宽高比 */
+			}
+		</style>
+	</head>
+	<body>
+
+		<nav class="navbar navbar-expand-md navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="javascript:void(0);">
+					<img src="img/tx.jpg" class="rounded-circle" style="height:3rem;">
+					周涛
+				</a>
+				<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navContent">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navContent">
+					<ul class="navbar-nav me-auto">
+						<li class="nav-item">
+							<a class="nav-link active" href="index.html">首页</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="javascript:void(0);">作品</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="javascript:void(0);" id="navbarDropdown"
+								data-bs-toggle="dropdown" aria-expanded="false" role="button">
+								日志
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="javascript:void(0);">前端技术</a></li>
+								<li><a class="dropdown-item" href="javascript:void(0);">工具箱</a></li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li><a class="dropdown-item" href="javascript:void(0);">生活点滴</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="javascript:void(0);">关于</a>
+						</li>
+					</ul>
+					<form class="d-flex">
+						<input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+						<button class="btn btn-outline-primary text-nowrap" type="submit">搜索</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+		
+		<center>
+			<h1>北国好风光 尽在黑龙江</h1>
+		</center>
+		<div class="video-container">
+			<video id="videoPlayer" controls>
+
+				<source src="img/hlj/sp1.mp4" type="video/mp4">
+				您的浏览器不支持视频播放标签。
+			</video>
+
+		</div>
+		<div class="container pt-3">
+
+			<div class="row" data-masonry='{"percentPosition": true }'>
+
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card">
+						<img src="img/hlj/1 (1).jpg" class="card-img-top" alt="...">
+						<div class="card-body d-flex align-items-baseline">
+							<div class="card-text"></div>
+							<small class="text-muted ms-auto">刚刚</small>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card">
+						<img src="img/hlj/1 (2).jpg" class="card-img-top" alt="...">
+						<div class="card-body d-flex align-items-baseline">
+							<div class="card-text"></div>
+							<small class="text-muted ms-auto">刚刚</small>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card">
+						<img src="img/hlj/1 (3).jpg" class="card-img-top" alt="...">
+						<div class="card-body d-flex align-items-baseline">
+							<div class="card-text"></div>
+							<small class="text-muted ms-auto">刚刚</small>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card">
+						<img src="img/hlj/1 (4).jpg" class="card-img-top" alt="...">
+						<div class="card-body d-flex align-items-baseline">
+							<div class="card-text"></div>
+							<small class="text-muted ms-auto">刚刚</small>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card">
+						<img src="img/hlj/1 (5).jpg" class="card-img-top" alt="...">
+						<div class="card-body d-flex align-items-baseline">
+							<div class="card-text"></div>
+							<small class="text-muted ms-auto">刚刚</small>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card">
+						<img src="img/hlj/1 (6).jpg" class="card-img-top" alt="...">
+						<div class="card-body d-flex align-items-baseline">
+							<div class="card-text"></div>
+							<small class="text-muted ms-auto">刚刚</small>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card">
+						<img src="img/hlj/1 (7).jpg" class="card-img-top" alt="...">
+						<div class="card-body d-flex align-items-baseline">
+							<div class="card-text"></div>
+							<small class="text-muted ms-auto">刚刚</small>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card">
+						<img src="img/hlj/1 (8).jpg" class="card-img-top" alt="...">
+						<div class="card-body d-flex align-items-baseline">
+							<div class="card-text"></div>
+							<small class="text-muted ms-auto">刚刚</small>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card">
+						<img src="img/hlj/1 (9).jpg" class="card-img-top" alt="...">
+						<div class="card-body d-flex align-items-baseline">
+							<div class="card-text"></div>
+							<small class="text-muted ms-auto">刚刚</small>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card">
+						<img src="img/hlj/1 (10).jpg" class="card-img-top" alt="...">
+						<div class="card-body d-flex align-items-baseline">
+							<div class="card-text"></div>
+							<small class="text-muted ms-auto">刚刚</small>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card">
+						<img src="img/hlj/1 (11).jpg" class="card-img-top" alt="...">
+						<div class="card-body d-flex align-items-baseline">
+							<div class="card-text"></div>
+							<small class="text-muted ms-auto">刚刚</small>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card">
+						<img src="img/hlj/1 (12).jpg" class="card-img-top" alt="...">
+						<div class="card-body d-flex align-items-baseline">
+							<div class="card-text"></div>
+							<small class="text-muted ms-auto">刚刚</small>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card">
+						<img src="img/hlj/1 (13).jpg" class="card-img-top" alt="...">
+						<div class="card-body d-flex align-items-baseline">
+							<div class="card-text"></div>
+							<small class="text-muted ms-auto">刚刚</small>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card">
+						<img src="img/hlj/1 (14).jpg" class="card-img-top" alt="...">
+						<div class="card-body d-flex align-items-baseline">
+							<div class="card-text"></div>
+							<small class="text-muted ms-auto">刚刚</small>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card">
+						<img src="img/hlj/1 (15).jpg" class="card-img-top" alt="...">
+						<div class="card-body d-flex align-items-baseline">
+							<div class="card-text"></div>
+							<small class="text-muted ms-auto">刚刚</small>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card">
+						<img src="img/hlj/1 (16).jpg" class="card-img-top" alt="...">
+						<div class="card-body d-flex align-items-baseline">
+							<div class="card-text"></div>
+							<small class="text-muted ms-auto">刚刚</small>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card">
+						<img src="img/hlj/1 (17).jpg" class="card-img-top" alt="...">
+						<div class="card-body d-flex align-items-baseline">
+							<div class="card-text"></div>
+							<small class="text-muted ms-auto">刚刚</small>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card">
+						<img src="img/hlj/1 (18).jpg" class="card-img-top" alt="...">
+						<div class="card-body d-flex align-items-baseline">
+							<div class="card-text"></div>
+							<small class="text-muted ms-auto">刚刚</small>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card">
+						<img src="img/hlj/1 (19).jpg" class="card-img-top" alt="...">
+						<div class="card-body d-flex align-items-baseline">
+							<div class="card-text"></div>
+							<small class="text-muted ms-auto">刚刚</small>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card">
+						<img src="img/hlj/1 (20).jpg" class="card-img-top" alt="...">
+						<div class="card-body d-flex align-items-baseline">
+							<div class="card-text"></div>
+							<small class="text-muted ms-auto">刚刚</small>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card">
+						<img src="img/hlj/1 (21).jpg" class="card-img-top" alt="...">
+						<div class="card-body d-flex align-items-baseline">
+							<div class="card-text"></div>
+							<small class="text-muted ms-auto">刚刚</small>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card">
+						<img src="img/hlj/1 (22).jpg" class="card-img-top" alt="...">
+						<div class="card-body d-flex align-items-baseline">
+							<div class="card-text"></div>
+							<small class="text-muted ms-auto">刚刚</small>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card">
+						<img src="img/hlj/1 (23).jpg" class="card-img-top" alt="...">
+						<div class="card-body d-flex align-items-baseline">
+							<div class="card-text"></div>
+							<small class="text-muted ms-auto">刚刚</small>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card">
+						<img src="img/hlj/1 (24).jpg" class="card-img-top" alt="...">
+						<div class="card-body d-flex align-items-baseline">
+							<div class="card-text"></div>
+							<small class="text-muted ms-auto">刚刚</small>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card">
+						<img src="img/hlj/1 (25).jpg" class="card-img-top" alt="...">
+						<div class="card-body d-flex align-items-baseline">
+							<div class="card-text"></div>
+							<small class="text-muted ms-auto">刚刚</small>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card">
+						<img src="img/hlj/1 (26).jpg" class="card-img-top" alt="...">
+						<div class="card-body d-flex align-items-baseline">
+							<div class="card-text"></div>
+							<small class="text-muted ms-auto">刚刚</small>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card">
+						<img src="img/hlj/1 (27).jpg" class="card-img-top" alt="...">
+						<div class="card-body d-flex align-items-baseline">
+							<div class="card-text"></div>
+							<small class="text-muted ms-auto">刚刚</small>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card">
+						<img src="img/hlj/1 (28).jpg" class="card-img-top" alt="...">
+						<div class="card-body d-flex align-items-baseline">
+							<div class="card-text"></div>
+							<small class="text-muted ms-auto">刚刚</small>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card">
+						<img src="img/hlj/1 (29).jpg" class="card-img-top" alt="...">
+						<div class="card-body d-flex align-items-baseline">
+							<div class="card-text"></div>
+							<small class="text-muted ms-auto">刚刚</small>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card">
+						<img src="img/hlj/1 (30).jpg" class="card-img-top" alt="...">
+						<div class="card-body d-flex align-items-baseline">
+							<div class="card-text"></div>
+							<small class="text-muted ms-auto">刚刚</small>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card">
+						<img src="img/hlj/1 (31).jpg" class="card-img-top" alt="...">
+						<div class="card-body d-flex align-items-baseline">
+							<div class="card-text"></div>
+							<small class="text-muted ms-auto">刚刚</small>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card">
+						<img src="img/hlj/1 (32).jpg" class="card-img-top" alt="...">
+						<div class="card-body d-flex align-items-baseline">
+							<div class="card-text"></div>
+							<small class="text-muted ms-auto">刚刚</small>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card">
+						<img src="img/hlj/1 (33).jpg" class="card-img-top" alt="...">
+						<div class="card-body d-flex align-items-baseline">
+							<div class="card-text"></div>
+							<small class="text-muted ms-auto">刚刚</small>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card">
+						<img src="img/hlj/1 (34).jpg" class="card-img-top" alt="...">
+						<div class="card-body d-flex align-items-baseline">
+							<div class="card-text"></div>
+							<small class="text-muted ms-auto">刚刚</small>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card">
+						<img src="img/hlj/1 (35).jpg" class="card-img-top" alt="...">
+						<div class="card-body d-flex align-items-baseline">
+							<div class="card-text"></div>
+							<small class="text-muted ms-auto">刚刚</small>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card">
+						<img src="img/hlj/1 (36).jpg" class="card-img-top" alt="...">
+						<div class="card-body d-flex align-items-baseline">
+							<div class="card-text"></div>
+							<small class="text-muted ms-auto">刚刚</small>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card">
+						<img src="img/hlj/1 (37).jpg" class="card-img-top" alt="...">
+						<div class="card-body d-flex align-items-baseline">
+							<div class="card-text"></div>
+							<small class="text-muted ms-auto">刚刚</small>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card">
+						<img src="img/hlj/1 (38).jpg" class="card-img-top" alt="...">
+						<div class="card-body d-flex align-items-baseline">
+							<div class="card-text"></div>
+							<small class="text-muted ms-auto">刚刚</small>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card">
+						<img src="img/hlj/1 (39).jpg" class="card-img-top" alt="...">
+						<div class="card-body d-flex align-items-baseline">
+							<div class="card-text"></div>
+							<small class="text-muted ms-auto">刚刚</small>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 mb-3">
+					<div class="card">
+						<img src="img/hlj/1 (40).jpg" class="card-img-top" alt="...">
+						<div class="card-body d-flex align-items-baseline">
+							<div class="card-text"></div>
+							<small class="text-muted ms-auto">刚刚</small>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+
+		<footer class="bg-gray py-5 text-center">
+			&copy;2022-2024 信息工程 Artech All rights reserved
+		</footer>
+		<script src="https://cases.geekfun.website/bs/dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
